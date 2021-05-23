@@ -67,7 +67,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *web[] = { "firefox-developer-edition", NULL };
 static const char *docked[] = { "docked", NULL };
-static const char *emacs[] = { "emacs", NULL };
 static const char *gmenu[] = { "gmenu", NULL };
 static const char *blueman[] = { "blueman-manager", NULL };
 
@@ -75,7 +74,6 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = blueman } },
-	{ MODKEY,                       XK_e,      spawn,          {.v = emacs } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = gmenu } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_m, spawn,               {.v = docked } },
